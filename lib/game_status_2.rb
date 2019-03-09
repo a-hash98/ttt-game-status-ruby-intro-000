@@ -65,10 +65,10 @@ def over?(board)
 end
 
 def winner()
-  if won?(board)|i| board[i] == "X"
+  if won?(board).any?{|i| board[i] == "X"}
     return "X"
 
-  elsif
+  elsif won?(board).any?{|i| board[i] == "O"}
     return "O"
 
   else
