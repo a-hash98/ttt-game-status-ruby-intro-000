@@ -35,11 +35,8 @@ def won?(board)
     if win.all?{|i| board[i] == "X"} || win.all?{|i| board[i] == "O"}
       print "yes"
       return true
-    else
-      print "no"
-      return false
-    end
-end
+   end
+ end
 end
 
 
