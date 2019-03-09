@@ -22,6 +22,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 
     if board.all?{|j| j  == " "}
+      print false
       return false
     end
 end
