@@ -24,11 +24,11 @@ def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
     winner = win_combination.all? do |win_num|
       win_num.position_taken?
-      if winner.length && all_x = winner.all? do |num| board[num].is_a?("X")
+      if winner && all_x = winner.all? do |num| board[num].is_a?("X")
         puts "yes"
         puts board
         return true
-      elsif winner.length && all_x = winner.all? do |num| board[num].is_a?("O")
+      elsif winner && all_x = winner.all? do |num| board[num].is_a?("O")
         puts "yes"
         puts board
         returns true
