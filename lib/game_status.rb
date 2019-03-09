@@ -34,10 +34,5 @@ def won?(board)
 end
 
 
-
-  end
-
-end
-
       #puts(position_taken?(board,each_num))
 won?(board)
