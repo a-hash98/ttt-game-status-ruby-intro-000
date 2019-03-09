@@ -71,7 +71,7 @@ def winner(board)
   elsif won?(board).any?{|i| board[i] == "O"}
     return "O"
 
-  else
+  elsif !won?(board)
     return nil
 
   end
