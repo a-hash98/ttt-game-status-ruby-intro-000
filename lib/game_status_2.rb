@@ -40,10 +40,10 @@ end
 
 won?(board)
 
-def draw?(board)
-  if won?(board) && (full?(board) ||  !full?(board))
-    return true
-  elsif won?(board)
+def full?(board)
+  if board.any?{|i| i == " "}
     return false
+  else
+    return true
   end
 end
