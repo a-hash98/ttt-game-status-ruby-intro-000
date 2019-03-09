@@ -1,6 +1,6 @@
 # Helper Method
 
-board = ["X"," ","X"," ","X","X", " ", " ", " "]
+board = ["X"," ","X"," ","X","X", "X", "X", "X"]
 
 
 def position_taken?(board, index)
@@ -27,7 +27,7 @@ WIN_COMBINATIONS = [
 
 WINNER = [
   [0,1,2],
-  [3,4,5]
+  [6,7,8]
   ]
 
 def won?(board)
