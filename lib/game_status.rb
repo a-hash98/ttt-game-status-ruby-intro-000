@@ -22,17 +22,13 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
-    win_combination do |num| board[num].is_a?("X")
-      puts "yes"
-      puts board
-      return true
-      end
-    elsif winner
-      win_combination do |num| board[num].is_a?("O")
-      puts "yes"
-      puts board
-      returns true
-    end
+     wonX = win_combination do |num| board[num].is_a?("X")
+     wonO = win_combination do |num| board[num].is_a?("O")
+     if wonX || wonO
+       return true
+     else
+       return false
+     end
   end
 end
 
