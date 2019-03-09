@@ -30,9 +30,10 @@ store_winner = Array.new
       if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
         store_winner << win_com
       end
+    return store_winner
     end
 
-return store_winner
+
 end
 
 
