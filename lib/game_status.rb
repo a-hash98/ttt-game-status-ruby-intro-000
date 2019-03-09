@@ -36,7 +36,7 @@ def won?(board)
       print "a combo"
       return "nothing"
     end
-  end
+end
 end
 
 
