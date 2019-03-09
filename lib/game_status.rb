@@ -39,5 +39,11 @@ def won?(board)
 end
 end
 
+boarda = ["X", "X", "X","O"]
 
-won?(board)
+def wona(boarda)
+  if boarda.all?{|i| boarda[i == "X"]}
+    print "yes
+  end
+end
+
