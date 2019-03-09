@@ -23,9 +23,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
     winner = win_combination.all? do |win_num|
-      print win_num
       position_taken?(board,win_num)
-
+    end
+    print winner
+    print win_num
     if winner
       win_combination do |num| board[num].is_a?("X")
       puts "yes"
@@ -43,7 +44,7 @@ def won?(board)
       puts "no"
       puts board
       return false
-    end
+    
     end
    end
  end
