@@ -33,9 +33,9 @@ def won?(board)
       return false
     end
 
-    if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-      print win_com
-      return win_com
+    wins = win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
+      print wins
+      return wins
 
     else
       return false
