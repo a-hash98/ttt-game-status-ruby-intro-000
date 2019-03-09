@@ -31,7 +31,9 @@ store_winner = Array.new
         return win_com
       else
         next
-
+      end
+  end
+end
 
 
         
