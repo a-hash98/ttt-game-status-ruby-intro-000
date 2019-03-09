@@ -27,14 +27,14 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-   
+
   WIN_COMBINATIONS.each do |win_com|
     if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
       print win_com
       return win_com
 
 
-   
+
  end
 end
 
