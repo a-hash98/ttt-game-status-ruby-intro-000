@@ -59,7 +59,8 @@ end
 def over?(board)
   if draw?(board) || full?(board) || won?(board)
     return true
-  else
+  elsif board.any?{|i| i == " "}
     return false
+    
   end
 end
