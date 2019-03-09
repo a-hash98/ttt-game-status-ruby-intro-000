@@ -32,6 +32,7 @@ def won?(board)
     if pos.all?{|i| i == " "}
       return false
     end
+  end
 
 
 
@@ -45,8 +46,8 @@ def won?(board)
 
     end
 
- end
 end
+
 
 def full?(board)
   if board.any?{|i| i == " "}
