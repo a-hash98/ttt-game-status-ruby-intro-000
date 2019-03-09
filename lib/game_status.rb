@@ -46,3 +46,5 @@ def wona(boarda)
     print "yes
   end
 end
+
+wona(boarda)
