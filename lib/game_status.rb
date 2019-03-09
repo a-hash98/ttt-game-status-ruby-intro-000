@@ -23,7 +23,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
      wonX = win_combination do |num| board[num].is_a?("X")
+      end
      wonO = win_combination do |num| board[num].is_a?("O")
+     end
      if wonX || wonO
        return true
      else
