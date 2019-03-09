@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
 ]
 def get_match(board,index_list,symbol)
   index_list.select {|i| i }
-    
+
   end
 end
 
@@ -33,10 +33,10 @@ def won?(board)
       return "a combo"
   end
 ends
-    
-      
-  
-  
+
+
+
+
 
 
       puts(position_taken?(board,each_num))
