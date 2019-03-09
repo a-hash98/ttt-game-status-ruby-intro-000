@@ -33,7 +33,7 @@ def won?(board)
       print "yes"
       return true
     else
-      print "yes"
+      print "no"
       return false
     end
 end
