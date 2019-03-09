@@ -65,10 +65,10 @@ def over?(board)
 end
 
 def winner()
-  if won?(board).includes("X")
+  if won?(board)|i| board[i] == "X"
     return "X"
 
-  elsif won?(board).includes("O")
+  elsif 
     return "O"
 
   else
