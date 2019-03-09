@@ -25,14 +25,6 @@ def won?(board)
       return false
     end
 
-    WIN_COMBINATIONS.each do |win_com|
-
-      if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-        return win_com
-      else
-        next
-      end
-  end
 end
 
 won?(board)
