@@ -30,8 +30,8 @@ store_winner = Array.new
       if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
         report_win_combination(win_com)
       end
-    
-    
+
+
     end
 
     report_win_combinations
