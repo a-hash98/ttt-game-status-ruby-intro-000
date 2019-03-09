@@ -18,4 +18,12 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
-    [win_combination].select{|win_num| win_num.position_taken?}
+    winner = win_combination.all? do |win_num|
+      win_num.position_taken?
+    if winner.length == 3 && all_x = winner.all? do |num| board[num].is_a?("X")
+      return true
+    elsif winner.length == 3 && all_x = winner.all? do |num| board[num].is_a?("X")
+      return false
+    end
+end
+      
