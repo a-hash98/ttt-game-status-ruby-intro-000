@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  Array.new store_winner
+store_winner = array.new
     if board.all?{|j| j  == " "}
       return false
     end
