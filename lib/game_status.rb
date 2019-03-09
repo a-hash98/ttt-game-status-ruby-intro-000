@@ -23,10 +23,18 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
     single_combination.select do |num|
-         m = board[num].match("X")
-
+         mx = board[num].match("X")
+    if mx.length == 3
+      puts "match"
     end
   end
+  single_combination.select do |num|
+       mo = board[num].match("O")
+       if mo.length == 3
+         puts "match"
+       end
+     end
+       
 end
 
       #puts(position_taken?(board,each_num))
