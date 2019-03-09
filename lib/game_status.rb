@@ -21,10 +21,12 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  mx Array.new()
   WIN_COMBINATIONS.each do |single_combination|
     single_combination.select do |num|
-         mx = board[num].match("X")
+         mx << board[num].match("X")
          print mx
+    end
 
    end
 end
