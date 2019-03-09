@@ -25,7 +25,7 @@ def won?(board)
 
     single_combination.select do |number|
       puts board[number]
-    
+
     end
 
 
