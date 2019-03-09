@@ -26,11 +26,8 @@ def won?(board)
        if wonX
          return true
        end
-      end
-     wonO = win_combination do |num| board[num].is_a?("O")
-      end
+     end
  end
-end
 
 
 won?(board)
