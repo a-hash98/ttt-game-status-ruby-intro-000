@@ -61,6 +61,6 @@ def over?(board)
     return true
   elsif board.any?{|i| i == " "}
     return false
-    
+
   end
 end
