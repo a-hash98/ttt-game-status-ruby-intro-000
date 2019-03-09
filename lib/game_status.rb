@@ -24,6 +24,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
     all_X = single_combination.all? do |each_num|
       index = each_num.to_i
+      puts index
       position_taken?(board,index)
     puts all_X
     end
