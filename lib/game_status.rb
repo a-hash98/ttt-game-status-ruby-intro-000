@@ -38,8 +38,10 @@ end
 
 def full?(board)
   if board.any?{|i| i == " "}
+    print false
     return false
   else
+    print true
     return true
   end
 end
