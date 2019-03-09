@@ -24,11 +24,11 @@ def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
     single_combination.select do |num|
       board[num].is_a("X")
-      
+
     end
   end
 end
-      
+
       #puts(position_taken?(board,each_num))
-  
+
 won?(board)
