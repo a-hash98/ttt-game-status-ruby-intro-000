@@ -22,8 +22,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
-    puts single_combination
-    single_combination.select{|i| board[i].match("X")}
+    single_combination.select{|i| board[i].include?("X")}
 
 
 
