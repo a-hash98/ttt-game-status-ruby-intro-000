@@ -23,8 +23,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
     winner = win_combination.all? do |win_num|
-      puts(position_taken?(board,win_num))
-
+      position_taken?(board,win_num)
+    puts winner
+    
 
 
     if winner
