@@ -33,6 +33,8 @@ def won?(board)
       print win_com
       return win_com
 
+    return false
+     
 
     end
  end
