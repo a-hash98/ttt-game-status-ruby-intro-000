@@ -25,13 +25,13 @@ WIN_COMBINATIONS = [
 #  end
 #end
 
-
+WINNER = [0,1,2]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |single_combo|
-    if single_combo.all?{|i| board[i] == "O"}
+  #WIN_COMBINATIONS.each do |single_combo|
+    if WINNER.all?{|i| board[i] == "X"}
       print single_combo
-      return "a combo"
+      return true
     else
       print "a combo"
       return "nothing"
