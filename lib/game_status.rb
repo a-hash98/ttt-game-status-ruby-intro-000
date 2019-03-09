@@ -32,6 +32,9 @@ def won?(board)
     if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
 
       return win_com
+
+    else
+      return falsey
    end
  end
 end
@@ -46,4 +49,12 @@ def full?(board)
   end
 end
 
-full?(board)
+def draw?(board)
+  if won?(board)==falsey && (full?(board) ||  !full?(board))
+    return true
+  
+  if won?(board)!=falsey
+    return false
+  end
+end
+    
