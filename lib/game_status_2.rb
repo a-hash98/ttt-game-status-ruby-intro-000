@@ -25,3 +25,5 @@ def won?(board)
       return false
     end
 end
+
+won?(board)
