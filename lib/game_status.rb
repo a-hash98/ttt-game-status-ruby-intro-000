@@ -18,3 +18,4 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
+    [win_combination].select{|win_num| win_num.position_taken?}
