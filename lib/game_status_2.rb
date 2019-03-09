@@ -34,6 +34,3 @@ store_winner = Array.new
       end
   end
 end
-
-
-        
