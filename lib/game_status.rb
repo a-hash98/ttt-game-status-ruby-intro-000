@@ -21,9 +21,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |[single_combination]|
+  WIN_COMBINATIONS.each do |single_combination|
 
-    single_combination.select do |number|
+    [single_combination].select do |number|
        arr = board[number].include?("X")
        if arr
          print arr
@@ -37,5 +37,4 @@ def won?(board)
 end
 
       #puts(position_taken?(board,each_num))
-
 won?(board)
