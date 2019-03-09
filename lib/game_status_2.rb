@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 
 ]
 
+WC = [3,4,5]
 
 def won?(board)
 
