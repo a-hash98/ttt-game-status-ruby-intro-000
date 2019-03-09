@@ -28,14 +28,21 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  WIN_COMBINATIONS.each do |win_com|
-    if win_com.all?{|i| board[i] == " "}
+  board.each do |pos|
+    if pos.all?{|i| i == " "}
       return false
     end
+    
 
-    wins = win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-    if wins
+
+  WIN_COMBINATIONS.each do |win_com|
+    
+
+    if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
+      print win_com
       return win_com
+
+
     end
 
  end
@@ -66,5 +73,3 @@ def over?(board)
     return false
   end
 end
-
-won?(board)
