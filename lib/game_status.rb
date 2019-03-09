@@ -23,8 +23,11 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
 
-    single_combination.select{|i| board[i].include?("X")}
-    break
+    single_combination.select do |number|
+       arr = board[number].include?("X")
+    return arr  
+    end    
+    
 
 
   end
