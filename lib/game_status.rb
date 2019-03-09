@@ -24,9 +24,9 @@ def won?(board)
   wonX = false
   WIN_COMBINATIONS.select do |win_combination|
      wonX = win_combination do |num| board[num].is_a?("X")
-
-     end
      puts wonX
+     end
+     
 
   end
 end
