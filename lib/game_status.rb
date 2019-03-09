@@ -31,8 +31,11 @@ def won?(board)
     elsif winner.length == 3 && all_x = winner.all? do |num| board[num].is_a?("X")
       puts true
       puts board
+
+    else
       return false
     end
+  end
 end
 
 won?(board)
