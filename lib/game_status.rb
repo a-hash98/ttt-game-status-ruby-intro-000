@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+
   puts WIN_COMBINATIONS[0].class
 end
 
