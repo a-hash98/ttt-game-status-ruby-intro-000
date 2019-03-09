@@ -31,7 +31,7 @@ def won?(board)
   WINNING_COMBINATIONS.each do |single_combo|
     if single_combo.all?{|i| i == "X"}
       return "a combo"
-    else 
+    else
       return "nothing"
     end
   end
