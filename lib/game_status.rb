@@ -29,7 +29,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 
   if !full?:
-  
+
     WIN_COMBINATIONS.each do |win_com|
       if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
 
@@ -47,4 +47,3 @@ def won?(board)
 
  end
 end
-    
