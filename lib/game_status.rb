@@ -37,7 +37,9 @@ def won?(board)
       print win_com
       return win_com
 
-    return false
+    elsif draw?(board)
+      return false
+    end
 
 
     end
