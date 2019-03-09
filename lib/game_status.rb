@@ -1,6 +1,6 @@
 # Helper Method
 
-board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+board = [" ", " ", " ", "O", "O", " ", " ", " ", " "]
 
 
 def position_taken?(board, index)
@@ -27,7 +27,7 @@ def won?(board)
     single_combination.select do |number|
        arr = board[number].include?("X")
     end
-    if arr != nil || arr != false
+    if arr != nil || arr != false || arr != " "
       print "winning combo"
     end
 
