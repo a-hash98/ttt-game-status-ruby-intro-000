@@ -28,10 +28,12 @@ def won?(board)
         puts "yes"
         puts board
         return true
+      end
       elsif winner && win_combination do |num| board[num].is_a?("O")
         puts "yes"
         puts board
         returns true
+      end
 
       else
         puts "no"
