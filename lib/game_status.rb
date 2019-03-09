@@ -44,7 +44,7 @@ def won?(board)
       puts "no"
       puts board
       return false
-    
+
     end
    end
  end
