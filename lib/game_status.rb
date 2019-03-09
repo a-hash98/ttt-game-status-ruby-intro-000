@@ -30,8 +30,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |single_combo|
     if single_combo.all?{|i| i == "X"}
+      print "a combo"
       return "a combo"
     else
+      print "a combo"
       return "nothing"
     end
   end
