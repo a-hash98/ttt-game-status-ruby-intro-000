@@ -34,7 +34,7 @@ def won?(board)
       return win_com
 
     return false
-     
+
 
     end
  end
