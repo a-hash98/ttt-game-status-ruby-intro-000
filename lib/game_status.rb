@@ -29,7 +29,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 
   board.each do |pos|
-    if pos.all?{|i| i == " "}
+    if pos.all?{|i| board[i] == " "}
       return false
     end
   end
