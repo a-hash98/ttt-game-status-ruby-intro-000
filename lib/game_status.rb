@@ -24,6 +24,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
     single_combination.select do |num|
          mx = board[num].match("X")
+         print mx
     if mx.length == 3
       puts "match"
     end
