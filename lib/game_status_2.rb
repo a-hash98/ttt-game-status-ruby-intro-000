@@ -25,10 +25,10 @@ def won?(board)
     if board.all?{|j| j  == " "}
       return false
     end
-
-    if WC.all?{|i| board[i] == "X"} || WC.all?{|i| board[i] == "O"}
-        print WC
-        return WC
+    for WIN_COMBINATIONS.each do |w|
+    if w.all?{|i| board[i] == "X"} || w.all?{|i| board[i] == "O"}
+        print w
+        return w
     else
        next
     end
