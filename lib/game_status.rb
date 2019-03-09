@@ -22,8 +22,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
-     puts win_combination do |num| board[num].is_a?("X")
+     wonX = win_combination do |num| board[num].is_a?("X")
+
      end
+     puts wonX
   end
 end
 
