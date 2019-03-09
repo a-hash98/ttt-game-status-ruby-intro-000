@@ -64,7 +64,7 @@ def over?(board)
   end
 end
 
-def winner()
+def winner(board)
   if won?(board).any?{|i| board[i] == "X"}
     return "X"
 
