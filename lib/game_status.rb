@@ -33,19 +33,8 @@ WINNER = [
 def won?(board)
   WIN_COMBINATIONS.each do |win|
     if win.all?{|i| board[i] == "X"} || win.all?{|i| board[i] == "O"}
-      print "yes"
+    
       return true
    end
  end
 end
-
-
-boarda = ["X", "X", "X"]
-
-def wona(boarda)
-  if boarda.all?{|i| i  == "X"}
-    print "yes"
-  end
-end
-
-won?(board)
