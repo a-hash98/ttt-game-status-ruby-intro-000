@@ -32,13 +32,13 @@ WINNER = [
 
 def won?(board)
   WINNER.each do |win|
-  if win.all?{|i| board[i] == "X"} || win.all?{|i| board[i] == "O"}
+    if win.all?{|i| board[i] == "X"} || win.all?{|i| board[i] == "O"}
       print "yes"
       return true
     else
       print "no"
       return false
-  end
+    end
 end
 end
 
