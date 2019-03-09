@@ -27,6 +27,8 @@ def won?(board)
 
     end
 
+    print winner
+    print "winss"
 
     if winner
       win_combination do |num| board[num].is_a?("X")
