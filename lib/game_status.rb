@@ -32,6 +32,8 @@ def won?(board)
     if win_com.all?{|i| board[i] == " "}
       return false
     end
+    if draw?(board)
+      return false
     if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
       print win_com
       return win_com
