@@ -26,9 +26,9 @@ def won?(board)
       position_taken?(board,win_num)
 
     end
+  end
 
-    print winner
-    print "winss"
+    
 
     if winner
       win_combination do |num| board[num].is_a?("X")
