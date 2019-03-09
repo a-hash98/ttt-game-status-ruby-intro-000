@@ -25,9 +25,9 @@ def won?(board)
 
     single_combination.select do |number|
        arr = board[number].include?("X")
-    return arr  
-    end    
-    
+    return arr
+    end
+
 
 
   end
