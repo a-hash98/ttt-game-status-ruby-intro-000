@@ -40,7 +40,7 @@ def won?(board)
     if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
       print win_com
     else
-      next
+      print "sth else"
 
 
     end
