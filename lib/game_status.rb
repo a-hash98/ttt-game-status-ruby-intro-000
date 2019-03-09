@@ -22,6 +22,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   puts SINGLE_COMBINATION
-  
+
 end
 won?(board)
