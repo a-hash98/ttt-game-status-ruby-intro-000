@@ -34,7 +34,7 @@ def won?(board)
          puts "match"
        end
      end
-       
+
 end
 
       #puts(position_taken?(board,each_num))
