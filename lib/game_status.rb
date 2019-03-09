@@ -34,3 +34,12 @@ def won?(board)
    end
  end
 end
+
+def full?(board)
+  if board.any{|i| i == " "}
+    return false
+  else
+    return true
+  end
+end
+    
