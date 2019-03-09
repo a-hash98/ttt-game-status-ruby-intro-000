@@ -43,7 +43,7 @@ boarda = ["X", "X", "X","O"]
 
 def wona(boarda)
   if boarda.all?{|i| boarda[i == "X"]}
-    print "yes
+    print "yes"
   end
 end
 
