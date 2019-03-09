@@ -25,14 +25,16 @@ def won?(board)
     winner = win_combination.all? do |win_num|
       win_num.position_taken?
     if winner.length == 3 && all_x = winner.all? do |num| board[num].is_a?("X")
-      puts true
+      puts "yes"
       puts board
       return true
-    elsif winner.length == 3 && all_x = winner.all? do |num| board[num].is_a?("X")
-      puts true
+    elsif winner.length == 3 && all_x = winner.all? do |num| board[num].is_a?("O")
+      puts "yes"
       puts board
+      returns true
 
     else
+      puts "no"
       return false
     end
     end
