@@ -38,7 +38,8 @@ def won?(board)
     else
       print "no"
       return false
-    end
+  end
+end
 end
 
 
