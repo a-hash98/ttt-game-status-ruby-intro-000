@@ -21,6 +21,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  arr = false
   WIN_COMBINATIONS.each do |single_combination|
 
     single_combination.select do |number|
