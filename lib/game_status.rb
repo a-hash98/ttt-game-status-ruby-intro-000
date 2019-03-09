@@ -29,7 +29,7 @@ WINNER = [0,1,2]
 
 def won?(board)
   #WIN_COMBINATIONS.each do |single_combo|
-    if WINNER.all?{|i| board[i] == "X"}
+    if WINNER.all?{|i| board[i] == "X" || "O"}
       print "yes"
       return true
     else
