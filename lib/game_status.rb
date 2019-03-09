@@ -25,7 +25,7 @@ def won?(board)
     single_combination.select do |num|
          mx = board[num].match("X")
          print mx
-  
+
    end
 end
 end
