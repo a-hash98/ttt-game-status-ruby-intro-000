@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-
+  Array store_winner = []
     if board.all?{|j| j  == " "}
       return false
     end
@@ -28,8 +28,7 @@ def won?(board)
     WIN_COMBINATIONS.each do |win_com|
 
       if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-        print "true"
-        return true
+        store_winner << win_com
       end
     end
 end
