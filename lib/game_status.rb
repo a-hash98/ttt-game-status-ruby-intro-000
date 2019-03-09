@@ -26,23 +26,23 @@ def won?(board)
       puts(position_taken?(board,win_num))
 
 
-      if winner && win_combination do |num| board[num].is_a?("X")
-        puts "yes"
-        puts board
-        return true
+    if winner && win_combination do |num| board[num].is_a?("X")
+      puts "yes"
+      puts board
+      return true
       end
-      elsif winner && win_combination do |num| board[num].is_a?("O")
-        puts "yes"
-        puts board
-        returns true
-      end
+    elsif winner && win_combination do |num| board[num].is_a?("O")
+      puts "yes"
+      puts board
+      returns true
+    end
 
-      else
-        puts "no"
-        puts board
-        return false
-      end
-     end
+    else
+      puts "no"
+      puts board
+      return false
+    end
+    end
    end
  end
 
