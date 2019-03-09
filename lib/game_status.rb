@@ -22,8 +22,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
-    all_X = single_combination.all? do |each_num|
-      position_taken?(board,board[each_num.to_i])
+    all_X = single_combination.all? do |each_num.to_i|
+      position_taken?(board,board[each_num])
     puts all_X
     end
   end
