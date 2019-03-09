@@ -68,7 +68,7 @@ def winner()
   if won?(board)|i| board[i] == "X"
     return "X"
 
-  elsif 
+  elsif
     return "O"
 
   else
