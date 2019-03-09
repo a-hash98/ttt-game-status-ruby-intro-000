@@ -27,7 +27,7 @@ def won?(board)
 
       #puts(position_taken?(board,each_num))
 
-  
+
   end
 end
 
