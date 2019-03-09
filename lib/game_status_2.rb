@@ -31,6 +31,8 @@ def won?(board)
         store_winner << win_com
       end
     end
+
+return store_winner
 end
 
 
