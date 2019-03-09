@@ -26,7 +26,7 @@ def won?(board)
       return false
     end
 
-    if WC.all?{|i| board[i] == "X"}
+    if WC.all?{|i| board[i] == "X" || board[i] == "O"} 
         print WC
     else
        print "sth else"
