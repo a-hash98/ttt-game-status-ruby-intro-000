@@ -28,19 +28,10 @@ store_winner = Array.new
     WIN_COMBINATIONS.each do |win_com|
 
       if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-        report_win_combinations(win_com)
-      end
+        return win_com
+      else
+        next
 
 
-    end
 
-    report_win_combinations(wins_array)
-
-end
-
-def report_win_combinations(wins_array = "")
-  wins_array << wins_array
-  return wins_array
-end
-
-won?(board)
+        
