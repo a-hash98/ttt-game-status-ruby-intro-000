@@ -57,4 +57,4 @@ def draw?(board)
   end
 end
 
-draw?(board)
+won?(board)
