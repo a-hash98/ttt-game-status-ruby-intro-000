@@ -28,8 +28,8 @@ def won?(board)
          print mx
     end
 
-   end
-end
+  end
+
 end
 
       #puts(position_taken?(board,each_num))
