@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |single_combination|
+  WIN_COMBINATIONS.each do |[single_combination]|
 
     single_combination.select do |number|
        arr = board[number].include?("X")
