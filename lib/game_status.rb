@@ -19,21 +19,25 @@ WIN_COMBINATIONS = [
   [2,4,6]
 
 ]
-
-def won?(board)
-  arr = false
-  WIN_COMBINATIONS.each do |single_combination|
-
-    single_combination.select do |number|
-       arr = board[number].include?("X")
-    end
-    if arr != nil || arr != false || arr != " "
-      print "winning combo"
-    end
-
+def get_match(board,index_list,symbol)
+  index_list.select {|i| i }
+    
   end
 end
 
 
-      #puts(position_taken?(board,each_num))
+
+def won?(board)
+  WINNING_COMBINATIONS.each do |single_combo|
+    if single_combo.all?{|i| i == "X"}
+      return "a combo"
+  end
+ends
+    
+      
+  
+  
+
+
+      puts(position_taken?(board,each_num))
 won?(board)
