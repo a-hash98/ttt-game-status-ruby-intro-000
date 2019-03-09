@@ -28,7 +28,7 @@ def won?(board)
         puts "yes"
         puts board
         return true
-      elsif winner && all_x = winner.all? do win_combination do |num| board[num].is_a?("O")
+      elsif winner && win_combination do |num| board[num].is_a?("O")
         puts "yes"
         puts board
         returns true
