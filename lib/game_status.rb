@@ -21,12 +21,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.select do |win_combination|
-     wonX = win_combination do |num| board[num].is_a?("X")
-     end
+  WIN_COMBINATIONS.each do |single_combination|
+    all_X = single_combination.all? do |each_num|
+      position_taken?(board,each_num)
+    end
   end
 end
-
-
 
 won?(board)
