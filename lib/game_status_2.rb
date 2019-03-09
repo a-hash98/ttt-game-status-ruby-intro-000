@@ -63,3 +63,15 @@ def over?(board)
     return false
   end
 end
+
+def winner()
+  if won?(board).includes("X")
+    return "X"
+  
+  elsif won?(board).includes("O")
+    return "O"
+
+  else
+    return nil
+
+  end
