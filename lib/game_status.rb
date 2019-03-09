@@ -25,7 +25,7 @@ def won?(board)
     winner = win_combination.all? do |win_num|
       position_taken?(board,win_num)
     puts winner
-    
+
 
 
     if winner
