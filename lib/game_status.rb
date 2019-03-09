@@ -24,9 +24,10 @@ def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
 
     single_combination.select do |number|
-      puts board[number]
-
+       arr = board[number].include?("X")
+    return arr
     end
+    break
 
 
 
