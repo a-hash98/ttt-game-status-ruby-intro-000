@@ -25,9 +25,10 @@ def won?(board)
 
     single_combination.select do |number|
        arr = board[number].include?("X")
-       return arr
+       if arr
+         print "yes"
+       end
     end
-    break
 
 
 
