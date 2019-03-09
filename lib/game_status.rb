@@ -27,23 +27,20 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
+  
+  WIN_COMBINATIONS.each do |win_com|
+    if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
 
-  if !full?:
-
-    WIN_COMBINATIONS.each do |win_com|
-      if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-
-        return win_com
-     end
+      return win_com
    end
-  end
-
-  def full?(board)
-    if board.any{|i| i == " "}
-      return false
-    else
-      return true
-    end
-
  end
 end
+
+def full?(board)
+  if board.any{|i| i == " "}
+    return false
+  else
+    return true
+  end
+end
+    
