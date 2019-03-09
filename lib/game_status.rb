@@ -47,4 +47,4 @@ def wona(boarda)
   end
 end
 
-won(board)
+won?(board)
