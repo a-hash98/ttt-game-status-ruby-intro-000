@@ -33,8 +33,8 @@ def won?(board)
        if mo.length == 3
          puts "match"
        end
-     end
-
+  end
+end
 end
 
       #puts(position_taken?(board,each_num))
