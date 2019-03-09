@@ -28,7 +28,7 @@ store_winner = Array.new
     WIN_COMBINATIONS.each do |win_com|
 
       if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
-        report_win_combination(win_com)
+        report_win_combinations(win_com)
       end
 
 
