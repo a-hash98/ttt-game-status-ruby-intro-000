@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |single_combination|
     all_xs = single_combination.select{|board[i]| board[i].is_a?("X")}
-        
+
 
       #puts(position_taken?(board,each_num))
 
