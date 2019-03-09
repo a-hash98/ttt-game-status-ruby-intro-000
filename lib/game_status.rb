@@ -28,12 +28,6 @@ def won?(board)
       puts "match"
     end
    end
-  single_combination.select do |num|
-       mo = board[num].match("O")
-       if mo.length == 3
-         puts "match"
-       end
-  end
 end
 end
 
