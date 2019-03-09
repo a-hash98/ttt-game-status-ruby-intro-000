@@ -25,14 +25,10 @@ WIN_COMBINATIONS = [
 #  end
 #end
 
-WINNER = [
-  [0,1,2],
-  [6,7,8]
-  ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win|
-    if win.all?{|i| board[i] == "X"} || win.all?{|i| board[i] == "O"}
+  WIN_COMBINATIONS.each do |win_com|
+    if win_com.all?{|i| board[i] == "X"} || win.com?{|i| board[i] == "O"}
 
       return true
    end
