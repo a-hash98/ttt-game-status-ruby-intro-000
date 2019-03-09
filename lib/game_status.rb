@@ -29,7 +29,7 @@ def won?(board)
     if arr != nil || arr != false
       print "winning combo"
     end
-    
+
   end
 end
 
