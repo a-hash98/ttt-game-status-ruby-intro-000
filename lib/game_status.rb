@@ -21,20 +21,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |single_combination|
-
-    [single_combination].select do |number|
-       arr = board[number].include?("X")
-       if arr
-         print arr
-       end
-    end
-
-
-
-  end
-
+  puts WIN_COMBINATIONS[0]
 end
 
-      #puts(position_taken?(board,each_num))
 won?(board)
