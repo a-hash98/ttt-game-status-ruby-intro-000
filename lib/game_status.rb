@@ -25,8 +25,8 @@ def won?(board)
     all_X = single_combination.all? do |each_num|
       position_taken?(board,each_num)
     puts all_X
-    break
     end
+    break
   end
 end
 
