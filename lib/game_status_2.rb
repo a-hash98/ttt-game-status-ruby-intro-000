@@ -34,11 +34,11 @@ store_winner = Array.new
 
     end
 
-    report_win_combinations
+    report_win_combinations(wins_array)
 
 end
 
-def report_win_combinations(wins_array = wins_array)
+def report_win_combinations(wins_array = "")
   wins_array << wins_array
   return wins_array
 end
